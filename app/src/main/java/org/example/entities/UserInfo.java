@@ -18,19 +18,12 @@ import lombok.*;
 public class UserInfo {
 
         @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private  Long id;
-
+        private String userId;
         private String username;
-
         private String firstName;
-
         private String lastName;
-
         private Long phoneNumber;
-
         private String email;
-
         private String profilePic;
 
 }

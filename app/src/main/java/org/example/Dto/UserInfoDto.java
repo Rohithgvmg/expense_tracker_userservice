@@ -13,22 +13,17 @@ import lombok.*;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
-@NoArgsConstructor // Add this
+@NoArgsConstructor
 @AllArgsConstructor
 public class UserInfoDto {
 
 
-
+    private String userId;
     private String username;
-
     private String firstName;
-
     private String lastName;
-
     private Long phoneNumber;
-
     private String email;
-
     private String profilePic;
 
 }

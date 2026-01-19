@@ -13,14 +13,14 @@ import org.springframework.stereotype.Component;
 public class AuthServiceConsumer {
 
 
-    private final UserRepository userRepository;
+    //private final UserRepository userRepository;
 
     @Autowired ObjectMapper objectMapper;
 
     @Autowired UserService userService;
-    AuthServiceConsumer(UserRepository userRepository){
-        this.userRepository=userRepository;
-    }
+//    AuthServiceConsumer(UserRepository userRepository){
+//        this.userRepository=userRepository;
+//    }
 
 
     @KafkaListener(topics = "${spring.kafka.topic.name}",groupId = "${spring.kafka.consumer.group-id}")
